@@ -6,32 +6,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <title>LazyCrazy</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+
     <style>
-        .one {
-            background-color: #fdcccc;
-            height: 20vh;
+        * {
+            margin: 0;
+            padding: 0;
         }
         
-        h1 {
+        .one {
+            background-color: #953434;
+            height: auto;
+        }
+        
+        .navbar {
             display: block;
-            width: 5vw;
             margin: auto;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        
+        img {
+            display: inline;
+            float: left;
+            height: 250px;
+            width: 250px;
+        }
+        
+        .para {
+            display: inline-block;
+            margin: 67px;
+            line-height: 30px;
+            background-color: #60de29;
+            align-content: center;
+        }
+        
+        .container {
+            width: 800px;
+            height: 110px;
         }
     </style>
 </head>
 
 <body>
-    <h1>LazyCrazy</h1>
-    <div class="one">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto beatae minus laudantium atque dolor. Voluptatum eaque doloremque et veritatis natus.
+    <div class="navbar">
+        <nav>
+            <h1>LazyCrazy</h1>
+        </nav>
     </div>
-    <div>
-        <p>email us here sasti masti :- mailbhejdo@lazycrazy.co</p>
-        <p> email us here for serious issues :- help@lazycrazy.co </p>
-        <img src="arsh.png" alt="err" srcset=""></div>
 
-    please check car wala link below
-    <a href="car.html">car wala link</a>
+    <div class="one">
+        <div class="photo">
+            <img src="arsh.png" alt="err" srcset=""> </div>
+        <div class="para">ARSHDEEP SINGH
+
+            <p>email us here sasti masti :- mailbhejdo@lazycrazy.co</p>
+            <p> email us here for serious issues :- help@lazycrazy.co </p>
+
+            please check car wala link below
+            <a href="car.html">car wala link</a>
+
+
+
+            <div class="container">
+                <model-viewer src="scene.gltf" alt="A 3D model of a car" shadow-intensity="1" width="500px" height="400" camera-controls auto-rotate ar>
+                </model-viewer>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loads <model-viewer> for modern browsers: -->
+    <script type=" module " src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js ">
+    </script>
+
+    <!-- Loads <model-viewer> for old browsers like IE11: -->
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js ">
+    </script>
 
 </body>
 <!-- lazy-crazy.vercel.app -->
