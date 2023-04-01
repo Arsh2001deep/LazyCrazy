@@ -2,3 +2,36 @@
     margin: 0;
     padding: 0;
 }
+
+.one {
+    background-color: #953434;
+    height: auto;
+}
+
+.navbar {
+    display: block;
+    margin: auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+img {
+    display: inline;
+    float: left;
+    height: 250px;
+    width: 250px;
+}
+
+.para {
+    display: inline-block;
+    margin: 67px;
+    line-height: 30px;
+    background-color: #60de29;
+    align-content: center;
+}
+
+.container {
+    width: 800px;
+    height: 110px;
+}
